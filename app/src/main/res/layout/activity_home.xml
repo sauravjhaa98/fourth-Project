@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".views.HomeActivity">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="50px"
+        android:layout_weight="7.5"
+        android:background="#C1B7B7">
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="50px"
+        android:layout_weight="7.5"
+        android:visibility="gone">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        android:layout_weight="2.5" />
+</LinearLayout>

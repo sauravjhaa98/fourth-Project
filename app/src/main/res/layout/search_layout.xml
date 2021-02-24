@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/search_news_imag"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_weight="0.5"
+        android:adjustViewBounds="true"
+        android:padding="10px"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/search_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="9.5"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="50px" />
+</LinearLayout>
